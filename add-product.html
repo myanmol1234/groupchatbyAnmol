@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="chatstyle.css">
+</head>
+
+<body>
+   
+        
+    <h2>Chat Messages</h2>
+
+        <form onsubmit="sendmsg(event)">
+            <input type="text" id="na" name="title" placeholder="name">
+            <input type="text" id="msg" name="title" placeholder="Send your msg">
+            <button type="submit">Send</button>
+        </form>
+   
+  
+    <ul id="addtoscreen">
+
+    </ul>
+
+    
+</body>
+<script src="logic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>
