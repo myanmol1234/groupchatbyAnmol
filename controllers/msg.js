@@ -2,10 +2,10 @@ const User = require('../models/user');
 
 exports.sendmsg=((req,res)=>
 {   console.log("body output is ",req.body);
-    const {  text, sender}=req.body;
+    const { text }=req.body;
     
-    console.log("output is",sender);
-    User.create({text,sender }).then(() => {
+    console.log("output is",text);
+    User.create({text }).then(() => {
         res.status(201).json({message: 'msg sent'})
     }).catch(err => {
         res.status(403).json(err);
